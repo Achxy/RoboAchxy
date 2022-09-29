@@ -13,6 +13,3 @@ class RoboAchxy(Client):
                 if l in r:
                     channel = self.get_channel(items["channel"])
                     await channel.send(f"{message.author} said \n\n\n{message.content}")  # type: ignore
-
-
-print(LOG_MAP)
