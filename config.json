@@ -1,0 +1,13 @@
+{
+    "log_map": {
+        "906227897327554660": {
+            "triggers": [
+                {
+                    "lex": "achxy",
+                    "case_sensitive": false,
+                    "channel": 913005044587192360
+                }
+            ]
+        }
+    }
+}
