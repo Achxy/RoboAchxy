@@ -8,6 +8,13 @@
                     "channel": 913005044587192360
                 }
             ]
+        },
+        "920205677371195403": {
+            "triggers": {
+                "lex": "achxy",
+                "case_sensitive": false,
+                "channel": 920266916797497374
+            }
         }
     }
 }
