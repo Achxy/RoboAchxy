@@ -5,9 +5,13 @@ from os import getenv
 BOT_DIR = Path(__file__).parent
 ROOT_DIR = BOT_DIR.parent
 
-with open(ROOT_DIR / "config.json") as cfg, open(ROOT_DIR / ".env") as env:
+with (ROOT_DIR / "config.json").open("r") as cfg:
     CONFIG = loads(cfg.read())
-    ENV = loads(env.read())
+if (env_path := (ROOT_DIR / ".env")).exists():
+    with env_path.open("r") as env:
+        ENV = loads(env.read())
+else:
+    ENV = {}
 
 
 DISCORD_TOKEN: str = getenv("DISCORD_TOKEN") or ENV["DISCORD_TOKEN"]
