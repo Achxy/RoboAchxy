@@ -5,6 +5,7 @@ from os import getenv
 
 BOT_DIR = Path(__file__).parent
 ROOT_DIR = BOT_DIR.parent
+COGS_DIR = BOT_DIR / "cogs"
 
 with (ROOT_DIR / "config.json").open("r") as cfg:
     CONFIG = loads(cfg.read())
