@@ -4,7 +4,7 @@ from .options import DISCORD_TOKEN
 
 
 def main():
-    bot = RoboAchxy(command_prefix="avi", intents=Intents.all())
+    bot = RoboAchxy(command_prefix="avi ", intents=Intents.all())
     bot.run(DISCORD_TOKEN)
 
 
