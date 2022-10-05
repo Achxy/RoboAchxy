@@ -3,5 +3,10 @@ from discord import Intents
 from .options import DISCORD_TOKEN
 
 
-bot = RoboAchxy(command_prefix=None, intents=Intents.all())
-bot.run(DISCORD_TOKEN)
+def main():
+    bot = RoboAchxy(command_prefix="avi", intents=Intents.all())
+    bot.run(DISCORD_TOKEN)
+
+
+if __name__ == "__main__":
+    main()

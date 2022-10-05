@@ -3,7 +3,7 @@
         "906227897327554660": {
             "triggers": [
                 {
-                    "lex": "achxy",
+                    "lex_regexp": "(:achxy(?!:))|((?<!:)achxy:)|((?<!:)achxy(?!:))",
                     "case_sensitive": false,
                     "channel": 913005044587192360
                 }
@@ -12,7 +12,7 @@
         "920205677371195403": {
             "triggers": [
                 {
-                    "lex": "achxy",
+                    "lex_regexp": "(:achxy(?!:))|((?<!:)achxy:)|((?<!:)achxy(?!:))",
                     "case_sensitive": false,
                     "channel": 920266916797497374
                 }
