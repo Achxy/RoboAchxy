@@ -4,6 +4,8 @@ from discord.ext import commands
 from bot.options import LOG_MAP
 from re import search
 
+__cogs__ = ("PatternLogger",)
+
 
 class PatternLogger(BaseCog):
     @commands.Cog.listener("on_message")
